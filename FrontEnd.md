@@ -32,7 +32,7 @@
 
 - Wishlist Page (CRUD wishes, view a list of wishes available in all published items)
   
-### Suppliers
+## Suppliers
 ### Un-Authenticated Scenes
 - Suppliers Landing Page ( A landing page more targetted for suppliers and stores )
   * An about section
