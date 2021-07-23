@@ -18,8 +18,8 @@
 - Can see items published history
 - Can unpublish an item
 - Can republish previously published items
-- Can update their profile
-- Can delete their account :(
+- Can update their profile ONLY ADMIN TYPE OF SUPPLIER GROUP
+- Can delete their account :( ONLY ADMIN TYPE OF SUPPLIER GROUP
 - Can see info about their subscribed users
 - Can notify users when publishing an item of specific interest to a User in their wishlist
 
