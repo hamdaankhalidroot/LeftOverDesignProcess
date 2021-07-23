@@ -4,8 +4,8 @@
 - Can Signup (Creates Admin Credentials and SupplierStore Profile)
 
 ## SupplierEmployees
-- Signup (Choose if logging in as employee for a store or as admin)
-- Login
+- Signup (Choose which store to signup as an employee of. Wait to be approved by Admin)
+- Login (If admin approved, let login)
 - Logout
 
 ## Users
