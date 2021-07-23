@@ -1,8 +1,10 @@
 # Models and Relations
 
 ## Auth
-- Suppliers accounts (id, supplier_group, name, email, password, created on, updated on)
+- SupplierEmployees accounts (id, supplier_group(admin or manager) , name, email, password, created on, updated on)
 - Users accounts (id, name, email, password, created on, updated on)
+
+- Supplier-Account (id, supplierEmployee acount id, supplier id)
 
 ## Supplier Groups Authorization Management
 - Supplier Groups (id, type(admin or manager), [API's allowed or not] <br/>
