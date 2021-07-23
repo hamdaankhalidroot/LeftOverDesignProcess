@@ -3,11 +3,17 @@
 - Create Token
 - Refresh Token
 
-- CRUD Suppliers (SUPPLIER ADMIN GROUP RESTRICTED API)
-- CRUD Users
+- C SupplierStore (Un-authenticated)
+- R SupplierStore (Authenticated only for Supplier Admin, Supplier Employee, Users)
+- UD SupplierStore (SUPPLIER ADMIN GROUP RESTRICTED API)
+- C SupplierStoreEmployees ( Un-Authenticated but needs Admin from SupplierStore to Approve/update)
+- R SupplierStoreEmployees (Authenticated SupplierStore Admin)
+- UD SupplierStoreEmployees (Authenticated SupplierStore Admin)
 
+- C Users (Un-authenticated)
+- R SupplierStore (Authenticated only for Supplier Admin, Supplier Employee, the Particular User)
+- UD Users (Authenticated particular User only)
 
-- CRUD Items if Authorized as Supplier
-- CRUD User_Supplier if Authorized User
-
-- IM STRUGGLING , NEED SLEEP
+- R Items (Authenticated SupplierStoreEmployees or SupplierStore Admin or Users) 
+- CUD Items (Authenticated SupplierStoreEmployees or SupplierStore Admin)
+- CRUD User_Supplier (Authenticated Authorized User or SupplierStoreAdmin)
