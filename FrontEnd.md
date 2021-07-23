@@ -9,7 +9,7 @@
   * links to signup, login, blogs, contact us 
   
 - Signup Page
-  * Form to signup
+  * Form to signup as a Store (Creates StoresProfile Admin and Store's Profile)
   * A way to switch to login
   * A way to navigate back to homescreen
   
@@ -33,8 +33,9 @@
 - Wishlist Page (CRUD wishes, view a list of wishes available in all published items)
   
 ## Suppliers
+
 ### Un-Authenticated Scenes
-- Suppliers Landing Page ( A landing page more targetted for suppliers and stores )
+- Suppliers Landing Page ( A landing page more targetted for suppliers (grocery stores and food banks) )
   * An about section
   * Suppliers value proposition
   * links to signup, login, blogs, contact us
@@ -57,9 +58,9 @@
   * Link to subscribed users dashboard page
   * create deals
  
-- Edit Profile Page
+- Edit Profile Page (StoresProfile Admin only)
 
-- History Page ( View all past items published, re-publish them with slight edits)
+- History Page (View all past items published, re-publish them with slight edits)
 
 - Subscribed Users Dashboard Page (View stats and info about users subscribed to the supplier)
 
