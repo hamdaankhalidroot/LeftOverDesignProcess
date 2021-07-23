@@ -3,9 +3,9 @@
 
 ## Auth
 
-- supplierStore account (Admin Account) :=> (supplierStore id , name, email, password, created on, updated on)
+- supplierStore account (Admin Account) :=> (supplierStore id, name, email, password, created on, updated on)
 
-- SupplierEmployee accounts (Manager Account) :=> (SupplierEmployee id, supplierStore id, name, email, password, created on, updated on)
+- SupplierEmployee accounts (Manager Account) :=> (SupplierEmployee id, supplierStore id, adminApproved?, name, email, password, created on, updated on)
 
 - Users accounts :=> (id, name, email, password, created on, updated on)
 
