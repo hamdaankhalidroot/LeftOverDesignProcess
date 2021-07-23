@@ -3,6 +3,6 @@ LeftOver.one is a multisided platform for bridging the gap between foodbanks/gro
 
 # Decision:
 - React.js front-end
-- Backend with Rails
+- Backend with Django
 - Postgres Database
 - SNS for messaging
