@@ -1,8 +1,12 @@
 # Models and Relations
 
 ## Auth
-- Suppliers accounts (id, name, email, password, created on, updated on) 
+- Suppliers accounts (id, supplier_group, name, email, password, created on, updated on)
 - Users accounts (id, name, email, password, created on, updated on)
+
+## Supplier Groups Authorization Management
+- Supplier Groups (id, type(admin or manager), [API's allowed or not]
+LOGIC : Accounts -> Supplier or Users -> IF Supplier-> Admin, Manager -> Managers can do everything except profile updates, and delete.
 
 ## Profile
 - Supplier profile (1-1 with suppliers account, phone, geolocation, description, restrictions, created on, updated on)
