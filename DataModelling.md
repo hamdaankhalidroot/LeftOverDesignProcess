@@ -5,7 +5,7 @@
 - Users accounts (id, name, email, password, created on, updated on)
 
 ## Supplier Groups Authorization Management
-- Supplier Groups (id, type(admin or manager), [API's allowed or not]
+- Supplier Groups (id, type(admin or manager), [API's allowed or not] <br/>
 LOGIC : Accounts -> Supplier or Users -> IF Supplier-> Admin, Manager -> Managers can do everything except profile updates, and delete.
 
 ## Profile
