@@ -1,4 +1,5 @@
 # Authentication & Authorization
+
 ## Suppliers
 - Signup
 - Login
@@ -10,6 +11,7 @@
 - Logout
 
 # Specific Functionality
+
 ## Suppliers
 - Can publish an item
 - Can update an item
