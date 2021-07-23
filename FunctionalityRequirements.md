@@ -1,6 +1,9 @@
 # Authentication & Authorization
 
-## Suppliers
+## SupplierStores
+- Can reach out to use to enlist as a supplier store ??? HELP (HOW DO WE FRAME THE FEATURE FOR SUPPLIER STORES TO HAVE EMPLOYEES OF DIFFERENT TYPES?)
+
+## SupplierEmployees
 - Signup
 - Login
 - Logout
