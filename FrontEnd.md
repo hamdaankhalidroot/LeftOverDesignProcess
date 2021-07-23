@@ -41,7 +41,8 @@
   * links to signup, login, blogs, contact us
   
 - Signup Page
-  * Form to signup (can choose admin or manager type)
+  * Form to signup as Store (Can signup as an admin/ create a supplierStore!)
+  * Form to signup as Employee of existing Store (Choose which store, await admin to approve)
   * A way to switch to login
   * A way to navigate back to homescreen 
   
