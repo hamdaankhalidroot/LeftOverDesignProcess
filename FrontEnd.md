@@ -40,7 +40,7 @@
   * links to signup, login, blogs, contact us
   
 - Signup Page
-  * Form to signup
+  * Form to signup (can choose admin or manager type)
   * A way to switch to login
   * A way to navigate back to homescreen 
   
