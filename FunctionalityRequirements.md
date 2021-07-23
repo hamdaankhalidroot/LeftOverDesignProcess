@@ -1,10 +1,10 @@
 # Authentication & Authorization
 
 ## SupplierStores
-- Can reach out to use to enlist as a supplier store ??? HELP (HOW DO WE FRAME THE FEATURE FOR SUPPLIER STORES TO HAVE EMPLOYEES OF DIFFERENT TYPES?)
+- Can Signup (Creates Admin Credentials and SupplierStore Profile)
 
 ## SupplierEmployees
-- Signup
+- Signup (Choose if logging in as employee for a store or as admin)
 - Login
 - Logout
 
@@ -21,8 +21,8 @@
 - Can see items published history
 - Can unpublish an item
 - Can republish previously published items
-- Can update their profile ONLY ADMIN TYPE OF SUPPLIER GROUP
-- Can delete their account :( ONLY ADMIN TYPE OF SUPPLIER GROUP
+- Can update their profile ONLY SupplierStores ADMIN ACCESS THIS
+- Can delete their account :( ONLY SupplierStores ADMIN ACCESS THIS
 - Can see info about their subscribed users
 - Can notify users when publishing an item of specific interest to a User in their wishlist
 
