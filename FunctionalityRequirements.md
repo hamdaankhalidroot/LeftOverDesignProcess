@@ -15,6 +15,9 @@
 
 # Specific Functionality
 
+## SupplierAdmins
+- Can see who is requesting managerial access, and approve, and unapprove.
+
 ## Suppliers
 - Can publish an item
 - Can update an item
