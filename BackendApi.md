@@ -3,7 +3,7 @@
 - Create Token
 - Refresh Token
 
-- CRUD Suppliers
+- CRUD Suppliers (SUPPLIER ADMIN GROUP RESTRICTED API)
 - CRUD Users
 
 
