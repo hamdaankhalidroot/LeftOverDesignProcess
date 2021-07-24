@@ -20,13 +20,13 @@
 
 ## Suppliers
 - Can publish an item
-- Can update an item
+- Can update an item ( Requested by food bank )
 - Can see items published history
-- Can unpublish an item
-- Can republish previously published items
+- Can unpublish an item ( Requested by food bank )
+- Can republish previously published items ( Requested by food bank )
 - Can update their profile ONLY SupplierStores ADMIN ACCESS THIS
 - Can delete their account :( ONLY SupplierStores ADMIN ACCESS THIS
-- Can see info about their subscribed users
+- Can see info about their subscribed users ( Requested by food bank )
 - Can notify users when publishing an item of specific interest to a User in their wishlist
 
 ## Users
