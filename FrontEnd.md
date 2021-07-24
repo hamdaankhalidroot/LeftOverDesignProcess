@@ -1,5 +1,9 @@
 # Scenes and Functionalities
 
+## Logic Encapsulation From Display
+
+- A javascript application that models all functions and objects that are usually nested in components in React, in pure javascript. Then using this base library to render information on Web and App.
+
 ## Users
 
 ### Un-Authenticated Scenes
