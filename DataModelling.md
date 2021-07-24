@@ -3,12 +3,13 @@
 - https://simpleisbetterthancomplex.com/tutorial/2018/01/18/how-to-implement-multiple-user-types-with-django.html
 
 ## Auth
+- Accounts (Extend AbstractUser) :=> Add fields => is_supplier_store || is_user || is_supplier_employee
 
-- supplierStore account (Admin Account) :=> (supplierStore id, name, email, password, created on, updated on)
+- supplierStore account (Admin profile) :=> (Accounts id, supplierStore id, ( Taken from accounts => name, email, password, created on, updated on) )
 
-- SupplierEmployee accounts (Manager Account) :=> (SupplierEmployee id, supplierStore id, adminApproved?, name, email, password, created on, updated on)
+- SupplierEmployee account (Manager Account) :=> (Accounts id, SupplierEmployee id, supplierStore id, adminApproved?, ( Taken from accounts => name, email, password, created on, updated on) )
 
-- Users accounts :=> (id, name, email, password, created on, updated on)
+- Users accounts :=> (Accounts Id, User id,  Taken from accounts => (name, email, password, created on, updated on))
 
 
 ## Profile
