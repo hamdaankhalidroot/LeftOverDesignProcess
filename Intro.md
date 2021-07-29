@@ -1,8 +1,8 @@
 # Introduction:
 LeftOver.one is a multisided platform for bridging the gap between foodbanks/grocery stores and budget constrained users.
 
-# Decision:
-- React.js front-end
-- Backend with Django
+# Decisions:
+- Front-end
+- Backend
 - Postgres Database
-- SNS for messaging
+- Notifications
