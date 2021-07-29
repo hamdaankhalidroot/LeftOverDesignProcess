@@ -1,11 +1,13 @@
-# Authentication & Authorization
+# Auth&Auth
 
-## SupplierStores
-- Can Signup (Creates Admin Credentials and SupplierStore Profile)
+## Providers
+- Signup 
+- Login (after approved by us)
+- Logout
 
-## SupplierEmployees
-- Signup (Choose which store to signup as an employee of. Wait to be approved by Admin)
-- Login (If admin approved, let login)
+## Provider Employees
+- Signup (With Valid OTP from Provider)
+- Login (after approved by us)
 - Logout
 
 ## Users
@@ -15,30 +17,20 @@
 
 # Specific Functionality
 
-## SupplierAdmins
-- Can see who is requesting managerial access, and approve, and unapprove.
+## Providers
 
-## Suppliers
+### Food Bank
 - Can publish an item
-- Can update an item ( Requested by food bank )
+- Can update an item
 - Can see items published history
-- Can unpublish an item ( Requested by food bank )
-- Can republish previously published items ( Requested by food bank )
-- Can update their profile ONLY SupplierStores ADMIN ACCESS THIS
-- Can delete their account :( ONLY SupplierStores ADMIN ACCESS THIS
-- Can see info about their subscribed users ( Requested by food bank )
+- Can unpublish an item
+- Can republish previously published items with minor edits if wanted
 - Can notify users when publishing an item of specific interest to a User in their wishlist
+- Can update their profile ONLY if they are the Provider FoodBank
+- Can delete their account :( ONLY if they are the Provider FoodBank
+- Can create OTP for employee to signup ONLY if they are the Provider FoodBank
+- Can remove employees ONLY if they are the Provider FoodBank
 
 ## Users
-- Can locate suppliers near them
-- Can subscribe to suppliers
-- Can see a list of their subscribed suppliers
-- Can un-subscribe to their subscribed suppliers
-- Can browse published deals by their subscribed suppliers: Based on item tags, supplier name, when the item deal will be closed by, date published
-- Can sort item deals by newest - oldest or oldest - newest
-- Can view supplier details when clicking item deal
-- Can view item deal details when clicking item deal
-- Can create a wishlist to alert them for specific items at stores
-- Can update their profile
-- Can delete their account :(
+TODO
 
