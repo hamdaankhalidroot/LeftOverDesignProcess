@@ -1,31 +1,44 @@
 # Models and Relations
 
-- https://simpleisbetterthancomplex.com/tutorial/2018/01/18/how-to-implement-multiple-user-types-with-django.html
+## Providers
 
-## Auth
-- Accounts (Extend AbstractUser) :=> Add fields => is_supplier_store || is_user || is_supplier_employee
+### Provider Authentication Model
+- provider_id PK
+- name String
+- type (grocery store, food bank, restaurant)
+- address String
+- email String
+- phone_num Int
+- approved_by_admin Boolean
+- created_on Timestamp
+- updated_on Timestamp
 
-- supplierStore account (Admin profile) :=> (Accounts id, supplierStore id, ( Taken from accounts => name, email, password, created on, updated on) )
+### ProviderEmployee Authentication Model
+- provider_employee_i PK
+- provider_id FK
+- email String
+- first name String
+- last name String
+- created_on Timestamp
+- updated_on Timestamp
 
-- SupplierEmployee account (Manager Account) :=> (Accounts id, SupplierEmployee id, supplierStore id, adminApproved?, ( Taken from accounts => name, email, password, created on, updated on) )
+### OTP-Provider-Employee (Used to manage providers publishing OTP's for employees to signup)
+- otp_id PK
+- ProviderId FK
+- published_at TimeStamp
+- expiring_at TimeStamp
+- used Boolean
 
-- Users accounts :=> (Accounts Id, User id,  Taken from accounts => (name, email, password, created on, updated on))
-
-
-## Profile
-
-- supplierStore profile :=> (supplierStore id, name, email, phone, geolocation, description, restrictions, created on, updated on)
-
-- User profile :=> (1-1 with users account, phone, created on, updated on)
-
-
-## Subscription Handling
-
-- SupplierStore-Users :=> (id, supplierStore id, user id, created on) Many-Many relation between supplierStores and users
-
-
-## Deals/Items
-
-- Items :=> (item id, supplierStore id, name, type, item deal expiration date, stock available, description, restriction, created on, updated on) One store can have many items
-
-- Wishlist :=> (user id, tags, created on, updated on)
+### Provider (Food Bank Only) Item (posted by providers of the type food bank only)
+- item_id PK
+- ProviderId FK
+- CreatedBy-ProviderEmployeeId FK (0) to noitfy created by providerId admin, -1 to notify it was by Super-admin
+- UpdatedBy-ProviderEmployeeId FK (0) to noitfy created by providerId admin, -1 to notify it was by Super-admin
+- UnpublishedBy-ProviderEmployeeId FK (0) to noitfy created by providerId admin, -1 to notify it was by Super-admin
+- name String
+- description String
+- units Int
+- amount_restriction Int
+- Published Boolean
+- created_on Timestamp
+- updated_on Timestamp
