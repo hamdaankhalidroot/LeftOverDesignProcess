@@ -42,3 +42,6 @@
 - Published Boolean
 - created_on Timestamp
 - updated_on Timestamp
+
+## Users
+TODO
