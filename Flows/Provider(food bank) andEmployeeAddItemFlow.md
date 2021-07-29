@@ -1,0 +1,5 @@
+- Provider Food Bank logs in
+- Goes to Provider Food Bank home page, home page has a form to add an item
+- Form (Item name, item description, units available, amount restrictions, checkbox publish/unpublish (default checked) )
+- After filling form click post and it should add an item for this provider food bank to the database
+- Alerted if successfully posted, else alerted for reason of failure.
