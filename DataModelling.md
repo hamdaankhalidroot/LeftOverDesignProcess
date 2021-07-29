@@ -32,9 +32,9 @@
 ### Provider (Food Bank Only) Item (posted by providers of the type food bank only)
 - item_id PK
 - ProviderId FK
-- CreatedBy-ProviderEmployeeId FK (0) to noitfy created by providerId admin, -1 to notify it was by Super-admin
-- UpdatedBy-ProviderEmployeeId FK (0) to noitfy created by providerId admin, -1 to notify it was by Super-admin
-- UnpublishedBy-ProviderEmployeeId FK (0) to noitfy created by providerId admin, -1 to notify it was by Super-admin
+- CreatedBy-ProviderEmployeeId FK Null if created by providerId admin
+- UpdatedBy-ProviderEmployeeId FK Null if created by providerId admin
+- UnpublishedBy-ProviderEmployeeId FK Null if noitfy created by providerId admin
 - name String
 - description String
 - units Int
