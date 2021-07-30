@@ -1,9 +1,14 @@
 # Models and Relations
 
-## Providers
+### Accounts
+- id PK
+- email
+- password
+- confirm password
+- type( Food Bank employee, Grocery employee, Restaurant employee, Shopper)
 
-### Provider Authentication Model
-- provider_id PK
+### Provider Profile Model
+- Provider_Id PK
 - name String
 - type (grocery store, food bank, restaurant)
 - address String
@@ -13,23 +18,24 @@
 - created_on Timestamp
 - updated_on Timestamp
 
-### ProviderEmployee Authentication Model
-- provider_employee_i PK
+### ProviderEmployee Profile Model
+- provider_employee_id PK/FK from Accounts (one-one from accounts) 
 - provider_id FK
-- email String
+- is_admin Boolean (The employee that creates a Provider has admin credentials by default)
 - first name String
 - last name String
 - created_on Timestamp
 - updated_on Timestamp
 
-### OTP-Provider-Employee (Used to manage providers publishing OTP's for employees to signup)
+### OTP-New-Provider-Employee (ProviderEmployee of admin type can publish OTP's for employees to signup)
 - otp_id PK
 - ProviderId FK
 - published_at TimeStamp
+- CreatedBy-ProviderEmployeeId
 - expiring_at TimeStamp
 - used Boolean
 
-### Provider (Food Bank Only) Item (posted by providers of the type food bank only)
+### Item (posted by providers of the type food bank only)
 - item_id PK
 - ProviderId FK
 - CreatedBy-ProviderEmployeeId FK Null if created by providerId admin
@@ -43,5 +49,5 @@
 - created_on Timestamp
 - updated_on Timestamp
 
-## Users
+### Users
 TODO
