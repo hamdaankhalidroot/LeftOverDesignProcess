@@ -1,12 +1,11 @@
 # Auth&Auth
 
 ## Providers
-- Signup 
-- Login (after approved by us)
-- Logout
+- Register (the credentials for this creates first Provider Employee with admin checked as true)
+- ^ Then wait till we approve Provider to use credentials to signin
 
 ## Provider Employees
-- Signup (With Valid OTP from Provider)
+- Signup (With Valid OTP from Providers Admin)
 - Login (after approved by us)
 - Logout
 
