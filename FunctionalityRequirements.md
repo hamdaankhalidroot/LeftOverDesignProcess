@@ -17,7 +17,7 @@
 
 # Specific Functionality
 
-## Providers
+## Providers (Food banks, Stores, Restaurants)
 
 ### Food Bank
 - Can publish an item
