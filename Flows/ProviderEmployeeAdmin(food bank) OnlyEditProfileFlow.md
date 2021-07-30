@@ -1,5 +1,5 @@
 - Once on the home page
-- Provider can go to navbar and click profile
+- ProviderEmployee with admin can go to navbar and click profile
 - On the profile page, provider has options to update their address, phone, email, name, income-restriction
 - Can click save to save , discard changes or click delete account if wanting to delete too
 - can navigate backe to home page
