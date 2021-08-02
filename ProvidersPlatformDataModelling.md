@@ -6,8 +6,20 @@
 - hashed password
 - Type (Provider, Shopper)
 
+### Parent Brand One to Many relation with Provider Profile model
+- brand_id
+- brand_name String
+- approved_super_admin Boolean
+
+### DistrictBrand One to Many relation with Provider Profile model
+- district_id PK
+- brand_id FK
+- approved_super_admin Boolean
+
 ### Provider Profile Model
 - Provider_Id PK
+- brand_id FK
+- district_id FK
 - name String
 - type (Food Bank, Grocery Store , Restaurant)
 - address String
@@ -36,11 +48,7 @@
 - used Boolean
 
 ### item (stores item id to type)
-- item_id Pk to food_bank_item
-- Type (food_bank_item, grocery_store_item, restaurant_item)
-
-### food_bank_item (posted by providers of the type food bank only)
-- item_id FK to item
+- item_id Pk
 - ProviderId FK
 - CreatedBy-ProviderEmployeeId FK Null if created by providerId admin
 - UpdatedBy-ProviderEmployeeId FK Null if created by providerId admin
@@ -49,6 +57,13 @@
 - description String
 - units Int
 - amount_restriction Int
+- price_before (Float, Nulllable)
+- price_after(Float, Nullable)
+- item_expiration (Timestamp, Nullable)
 - Published Boolean
 - created_on Timestamp
 - updated_on Timestamp
+
+### item_categories
+- item_id FK-PK  1-n relationship to item
+- Catgeory_type (Enum types of categories( Dairy, drinks, vegetables, frozen, etc)
